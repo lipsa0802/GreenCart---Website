@@ -18,8 +18,12 @@ const BottomBanner = () => {
                     <div key={index} className='flex item-center gap-4 mt-2'>
                         <img src={feature.icon} alt={feature.title} 
                         className='md:w-11 w-9 '/>
-                         <h3 className=' text-lg md:text-xl font-semibold  '>{feature.title}</h3>
-                         <p className='text-grey-500/70 text-xs md:text-sm'>{feature.description}</p>
+                        <div>
+                        <h3 className=' text-lg md:text-xl font-semibold  '>{feature.title}</h3>
+                         <p className='text-grey-500/70 text-xs md:text-sm'>
+                         {feature.description}</p>
+                        </div>
+                         
                     </div>
                 ))}
             </div>
